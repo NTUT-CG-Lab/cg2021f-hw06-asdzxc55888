@@ -122,7 +122,7 @@
 			const loader = new PLYLoader();
 
 			// Load original model according to model_id
-			loader.load('./models/Bus/model_2000.obj', function (geometry) {
+			loader.load('./models/Cat/model_2000.obj', function (geometry) {
 
 				const material = new THREE.MeshPhongMaterial({ color: 0xFF5555, specular: 0x111111, shininess: 200 });
 				geometry.computeVertexNormals();
@@ -143,7 +143,7 @@
 			const material = new THREE.MeshPhongMaterial({ color: 0xAAAAAA, specular: 0x111111, shininess: 200 });
 
 			// Load models of pytorch3d 
-			models.forEach(model => loader.load(`./models/Bus/model_${model.toString()}.ply`, function (geometry) {
+			models.forEach(model => loader.load(`./models/Cat/model_${model.toString()}.ply`, function (geometry) {
 
 				geometry.computeVertexNormals();
 
